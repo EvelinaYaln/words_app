@@ -19,12 +19,30 @@ a {
   color: #FFF;
 }
 
+.footer {
+  padding: 100px 0;
+  background-color: rgba(193, 66, 66, 0.22);
+}
+
 .header {
   padding: 44px 500px 45px 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   background-color: rgba(193, 66, 66, 0.22);
+}
+
+.table-container__table {
+  margin-left: 20px;
+}
+
+.heading-container__heading {
+  margin-left: 20px;
+}
+
+td, th {
+  width: 150px;
+  text-align: left;
 }
 
 .logo {
@@ -38,5 +56,9 @@ a {
 .logo:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.logo--smaller {
+  font-size: 1.5rem;
 }
 /*# sourceMappingURL=style.css.map */

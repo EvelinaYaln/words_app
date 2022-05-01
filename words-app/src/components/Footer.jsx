@@ -1,8 +1,7 @@
-
 function Footer() {
     return (
-      <div className="Footer">
-        
+      <div className="footer">
+        <a href="#main" className="logo logo--smaller">Study English</a>
       </div>
     );
   }

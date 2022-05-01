@@ -1,0 +1,17 @@
+.table-container {
+    &__table {
+        margin-left: 20px;
+    }
+}
+
+.heading-container {
+    &__heading {
+        margin-left: 20px;
+    }
+}
+
+td,th {
+    width: 150px;
+    text-align: left;
+}
+ 

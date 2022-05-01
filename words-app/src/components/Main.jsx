@@ -3,7 +3,7 @@ import Table from "./Table";
 
 
 const vocab = [{
-  "english":"carrot","transcription":"[ ˈkærət ]","russian":"морковь","tags":"овощи",
+  "english":"carrot","transcription":"[ ˈkærət ]","russian":"морковь","tags":"овощи", "isSelected": true,
 },{
   "english":"buttefly","transcription":"[ ˈbʌtəflaɪ ]","russian":"бабочка",
 },{
@@ -39,7 +39,7 @@ function Main() {
       <div className="main" id="main">
         <Heading/>
          {vocab.map((v)=>
-        <Table english={v.english} russian={v.russian}  transcription={v.transcription}/>
+        <Table english={v.english} russian={v.russian}  transcription={v.transcription} isSelected={v.isSelected}/>
       )}
          
       </div>

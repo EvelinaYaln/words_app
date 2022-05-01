@@ -1,4 +1,4 @@
-
+import Button from './Button';
 function Table(props) {
     return (
       <div className="table-container">
@@ -6,10 +6,10 @@ function Table(props) {
         <table className="table-container__table table">
           <tbody>
             <tr>
-              <td>{props.english}</td>
+              <td contentEditable="true">{props.english} </td>
               <td>{props.russian}</td>
               <td>{props.transcription}</td>
-              <td></td>
+              <td><Button/></td>
             </tr>
          
           </tbody>

@@ -18,4 +18,25 @@ a {
   text-decoration: none;
   color: #FFF;
 }
+
+.header {
+  padding: 44px 500px 45px 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(193, 66, 66, 0.22);
+}
+
+.logo {
+  color: #000;
+  font-size: 2rem;
+  font-weight: 700;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.logo:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
 /*# sourceMappingURL=style.css.map */

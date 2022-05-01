@@ -1,8 +1,8 @@
 
 function Header() {
     return (
-      <div className="Header">
-        
+      <div className="header">
+      <a href="#main" className="logo">Study English</a>
       </div>
     );
   }

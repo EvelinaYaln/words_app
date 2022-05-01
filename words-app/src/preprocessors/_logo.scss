@@ -1,0 +1,9 @@
+.logo {
+    color: #000;
+    font-size: 2rem;
+    font-weight: $bold-font-weight;
+    transition: all .2s;
+    &:hover {
+        transform: scale(1.1);
+    }
+}

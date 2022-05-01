@@ -1,0 +1,7 @@
+@mixin center {
+    margin: 0 auto;
+}
+
+@mixin text-align($text-align) {
+    text-align: $text-align;
+}

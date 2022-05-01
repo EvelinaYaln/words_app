@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 20px;
+}
+
+body {
+    font-family: 'Source Serif Pro', Arial, sans-serif;
+    @include text-align(center);
+}
+
+a {
+    text-decoration: none;
+    color: $text-color;
+}

@@ -6,7 +6,7 @@ function Table(props) {
         <table className="table-container__table table">
           <tbody>
             <tr>
-              <td contentEditable="true">{props.english} </td>
+              <td>{props.english} </td>
               <td>{props.russian}</td>
               <td>{props.transcription}</td>
               <td><Button/></td>

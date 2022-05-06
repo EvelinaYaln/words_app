@@ -70,6 +70,34 @@ a {
   margin-right: 5px;
 }
 
+.card {
+  border: 1px solid #000;
+  border-radius: 10px;
+  width: 20%;
+  margin: 0 auto 20px;
+  padding: 40px 0;
+  background-color: #faf3ea;
+}
+
+.card__transcription {
+  margin-bottom: 40px;
+  color: gray;
+}
+
+.card__english {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.card__button-show {
+  border-radius: 15px;
+  border: 1px solid #50ae50;
+  color: #FFF;
+  height: 30px;
+  width: 170px;
+  background-color: #50ae50;
+}
+
 .footer {
   padding: 100px 0;
   background-color: rgba(241, 144, 144, 0.22);
@@ -85,6 +113,7 @@ a {
 
 .main {
   background-color: #F3F7EA;
+  padding: 20px;
 }
 
 .table-container__table {

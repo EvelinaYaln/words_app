@@ -1,0 +1,29 @@
+.card {
+    border: 1px solid #000;
+    border-radius: 10px;
+    width: 20%;
+    
+    margin: 0 auto 20px;
+    padding: 40px 0;
+    background-color: rgb(250, 243, 234);
+    
+    &__transcription {
+        margin-bottom: 40px;
+        color: gray;
+    }
+    &__english {
+        font-weight: $bold-font-weight;
+        font-size: 1.2rem;
+    }
+    &__button-show {
+        border-radius: 15px;
+        border: 1px solid rgb(80, 174, 80);
+        color: #FFF;
+        height: 30px;
+        width: 170px;
+        background-color: rgb(80, 174, 80);
+    
+
+    }
+    
+}

@@ -1,5 +1,6 @@
 import Heading from "./Heading-table";
 import Table from "./Table";
+import Card from "./Card";
 
 
 const vocab = [{
@@ -37,6 +38,8 @@ const vocab = [{
 function Main() {
     return (
       <div className="main" id="main">
+        {vocab.map((v)=>
+        <Card  english={v.english} russian={v.russian}  transcription={v.transcription}/>)}
         <Heading/>
          {vocab.map((v)=>
         <Table english={v.english} russian={v.russian}  transcription={v.transcription} isSelected={v.isSelected}/>

@@ -1,4 +1,6 @@
 .button-container {
+    display: inline-block;
+    margin-left: 10px;
     &__save {
         color: $text-color;
         background-color: rgb(80, 174, 80);
@@ -24,7 +26,7 @@
             background-color:rgba(236, 142, 65, .8);
         }
     }
-    &__delete {
+    &__delete { 
         color: $text-color;
         background-color: rgb(209, 84, 84);
         width: 35px;

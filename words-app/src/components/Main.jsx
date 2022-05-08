@@ -4,7 +4,7 @@ import Card from "./Card";
 
 
 const vocab = [{
-  "english":"carrot","transcription":"[ ˈkærət ]","russian":"морковь","tags":"овощи", "isSelected": true,
+  "english":"carrot","transcription":"[ ˈkærət ]","russian":"морковь","tags":"овощи", 
 },{
   "english":"buttefly","transcription":"[ ˈbʌtəflaɪ ]","russian":"бабочка",
 },{
@@ -42,7 +42,7 @@ function Main() {
         <Card  english={v.english} russian={v.russian}  transcription={v.transcription}/>)}
         <Heading/>
          {vocab.map((v)=>
-        <Table english={v.english} russian={v.russian}  transcription={v.transcription} isSelected={v.isSelected}/>
+        <Table english={v.english} russian={v.russian}  transcription={v.transcription} />
       )}
          
       </div>

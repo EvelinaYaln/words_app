@@ -19,6 +19,11 @@ a {
   color: #FFF;
 }
 
+.button-container {
+  display: inline-block;
+  margin-left: 10px;
+}
+
 .button-container__save {
   color: #FFF;
   background-color: #50ae50;
@@ -120,13 +125,22 @@ a {
   margin-left: 20px;
 }
 
+.table {
+  margin-left: 20px;
+  text-align: left;
+}
+
 .heading-container__heading {
   margin-left: 20px;
 }
 
 td, th {
-  width: 200px;
+  width: 165px;
   text-align: left;
+}
+
+input {
+  height: 30px;
 }
 
 .logo {

@@ -1,5 +1,6 @@
 
-function Button() {
+
+function Button(props) {
     return (
       <div className="button-container">
          <button className="button-container__save">
@@ -9,7 +10,7 @@ function Button() {
         <button  className="button-container__correct" id="correct">
           <i className="fa-solid fa-pen"></i>
         </button>
-        <button className="button-container__delete">
+        <button className="button-container__delete" type="button">
           <i className="fa-solid fa-trash-can"></i>
         </button>
         

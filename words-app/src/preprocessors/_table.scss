@@ -1,7 +1,13 @@
 .table-container {
     &__table {
         margin-left: 20px;
+        
     }
+}
+
+.table {
+    margin-left: 20px;
+    text-align: left;
 }
 
 .heading-container {
@@ -11,9 +17,11 @@
 }
 
 td,th {
-    width: 200px;
+    width: 165px;
     text-align: left;
 }
 
-
+input {
+    height: 30px;
+}
  

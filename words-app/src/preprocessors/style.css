@@ -103,6 +103,23 @@ a {
   background-color: #50ae50;
 }
 
+.card-container__forward, .card-container__backward {
+  border: 0px solid #F3F7EA;
+  background-color: #F3F7EA;
+  font-size: 1.2rem;
+  -webkit-transition: all .1s;
+  transition: all .1s;
+}
+
+.card-container__forward:hover, .card-container__backward:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.card-container__forward {
+  margin-left: 60px;
+}
+
 .footer {
   padding: 100px 0;
   background-color: rgba(241, 144, 144, 0.22);
@@ -128,6 +145,10 @@ a {
 .table {
   margin-left: 20px;
   text-align: left;
+}
+
+.heading-container {
+  padding-top: 50px;
 }
 
 .heading-container__heading {

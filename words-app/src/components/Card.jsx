@@ -1,6 +1,8 @@
 import {useState} from 'react';
+//import words from '../words-json/words.json';
 function Card(props) {
     const [pressed, setPressed]= useState(false);
+   
     const handleChange =()=> {
       setPressed(!pressed);
     }
@@ -11,6 +13,7 @@ function Card(props) {
           <div className="card__transcription">{props.transcription}</div>
           {pressed ? <div className="card__russian" onClick={handleChange}>{props.russian}</div> : <button className="card__button-show" onClick={handleChange}>Показать перевод</button> }
         </div>
+        
       </div>
     );
   }

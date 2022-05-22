@@ -27,3 +27,20 @@
     }
     
 }
+
+.card-container {
+    &__forward,&__backward {
+        border: 0px solid $main-background-color;
+        background-color: $main-background-color;
+        font-size: 1.2rem;
+        transition: all .1s;
+       &:hover {
+        transform: scale(1.2);
+       }
+    }  
+    &__forward {
+    margin-left: 60px;   
+    } 
+} 
+    
+    

@@ -33,6 +33,7 @@ a {
   border-radius: 3px;
   -webkit-transition: all .2s;
   transition: all .2s;
+  margin-right: 5px;
 }
 
 .button-container__save:hover {
@@ -55,20 +56,29 @@ a {
   background-color: rgba(236, 142, 65, 0.8);
 }
 
-.button-container__delete {
+.button-container__delete, .button-container__cancel {
   color: #FFF;
   background-color: #d15454;
-  width: 35px;
-  height: 25px;
   border: 1px solid #d15454;
   border-radius: 3px;
-  margin-left: 5px;
+  color: #FFF;
   -webkit-transition: all .2s;
   transition: all .2s;
 }
 
-.button-container__delete:hover {
+.button-container__delete:hover, .button-container__cancel:hover {
   background-color: rgba(209, 84, 84, 0.9);
+}
+
+.button-container__delete {
+  width: 35px;
+  height: 25px;
+  margin-left: 5px;
+}
+
+.button-container__cancel {
+  width: 75px;
+  height: 25px;
 }
 
 .button-container__save i {
@@ -120,16 +130,18 @@ a {
   margin-left: 60px;
 }
 
+.container {
+  padding: 50px;
+  background-color: #F3F7EA;
+}
+
 .footer {
   padding: 100px 0;
   background-color: rgba(241, 144, 144, 0.22);
 }
 
 .header {
-  padding: 44px 500px 45px 150px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  padding: 30px 118px 101px 132px;
   background-color: rgba(241, 144, 144, 0.22);
 }
 
@@ -138,8 +150,11 @@ a {
   padding: 20px;
 }
 
-.table-container__table {
-  margin-left: 20px;
+.not-found {
+  background-color: #F3F7EA;
+  padding: 100px;
+  font-weight: 700;
+  font-size: 1.5rem;
 }
 
 .table {
@@ -179,5 +194,47 @@ input {
 
 .logo--smaller {
   font-size: 1.5rem;
+}
+
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+}
+
+.flex-cont-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.home, .game {
+  font-size: 1.5rem;
+  list-style-type: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.home__link, .game__link {
+  color: #000;
+}
+
+.home__link:hover, .game__link:hover {
+  text-decoration: underline;
+}
+
+.home__link {
+  margin-right: 35px;
 }
 /*# sourceMappingURL=style.css.map */

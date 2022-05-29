@@ -78,7 +78,7 @@ function Slider({choosenCard = 0}) {
     }
 
     return (
-    <div>
+    <div className="container">
         <Card  english={words[index].english} russian={words[index].russian}  transcription={words[index].transcription} /> 
         <button className="card-container__backward" /*onClick={()=>handleClick('left')}*/onClick={ handleClickLeft}><i className="fa-solid fa-angle-left"></i></button>
         <button className="card-container__forward" /*onClick={()=>handleClick('right')}*/onClick={ handleClickRight}><i className="fa-solid fa-angle-right"></i></button>

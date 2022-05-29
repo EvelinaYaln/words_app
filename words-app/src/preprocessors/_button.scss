@@ -9,6 +9,7 @@
         border: 1px solid rgb(80, 174, 80);
         border-radius: 3px;
         transition: all .2s;
+        margin-right: 5px;
         &:hover {
             background-color:rgba(80, 174, 80,.9);
         }
@@ -26,18 +27,25 @@
             background-color:rgba(236, 142, 65, .8);
         }
     }
-    &__delete { 
+    &__delete, &__cancel {
         color: $text-color;
         background-color: rgb(209, 84, 84);
-        width: 35px;
-        height: 25px;
         border: 1px solid rgb(209, 84, 84);
         border-radius: 3px;
-        margin-left: 5px;
+        color: $text-color;
         transition: all .2s;
         &:hover {
             background-color:rgba(209, 84, 84, .9);
         }
+    }
+    &__delete { 
+        width: 35px;
+        height: 25px;
+        margin-left: 5px;
+    }
+    &__cancel {
+        width: 75px;
+        height: 25px;
     }
 }
 

@@ -1,0 +1,32 @@
+.flex-container {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+.flex-cont-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.home, .game {
+    font-size: 1.5rem;
+    list-style-type: none;
+    transition: all .2s;
+    &__link {
+        color: #000;
+    }
+    &__link:hover {
+       text-decoration: underline;
+    }
+}
+.home {
+    &__link {
+        margin-right: 35px;
+    }
+}
+
+
+

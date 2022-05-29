@@ -2,3 +2,10 @@
     background-color: $main-background-color;
     padding: 20px;
 }
+
+.not-found {
+    background-color: $main-background-color;
+    padding: 100px;
+    font-weight: $bold-font-weight;
+    font-size: 1.5rem;
+}

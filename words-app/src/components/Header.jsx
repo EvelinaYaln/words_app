@@ -1,8 +1,8 @@
-
+import Menu from "./Menu"
 function Header() {
     return (
       <div className="header">
-      <a href="#main" className="logo">Study English</a>
+        <Menu/>
       </div>
     );
   }

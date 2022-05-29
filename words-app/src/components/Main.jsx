@@ -1,7 +1,7 @@
 import Heading from "./Heading-table";
 import Table from "./Table";
-import Card from "./Card";
-import Slider from "./Slider";
+
+
 
 
 const vocab = [{
@@ -40,10 +40,10 @@ function Main() {
     return (
       <div className="main" id="main">
         
-        <Slider choosenCard={3}/>
+        
         <Heading/>
          {vocab.map((v)=>
-        <Table english={v.english} russian={v.russian}  transcription={v.transcription} />
+        <Table english={v.english} russian={v.russian}  transcription={v.transcription} key={v.index}/>
       )}
          
       </div>
@@ -52,3 +52,6 @@ function Main() {
   }
   
   export default Main;
+
+ 
+

@@ -4,15 +4,15 @@ import Card from './Card';
 
  const words =
   [{
-      "english":"carrot","transcription":"[ ˈkærət ]","russian":"морковь","tags":"овощи","index":"0"
+      "english":"carrot","transcription":"[ ˈkærət ]","russian":"морковь","tags":"овощи","index":"0", 
   },{
-      "english":"buttefly","transcription":"[ ˈbʌtəflaɪ ]","russian":"бабочка","index":"1"
+      "english":"buttefly","transcription":"[ ˈbʌtəflaɪ ]","russian":"бабочка","index":"1",
   },{
-      "english":"street","transcription":"[ stri:t ]","russian":"улица","tags":"овощи","index":"2"
+      "english":"street","transcription":"[ stri:t ]","russian":"улица","tags":"овощи","index":"2", 
   },{
-      "english":"car","transcription":"[ kɑ: ]","russian":"автомобиль","tags":"","index":"3"
+      "english":"car","transcription":"[ kɑ: ]","russian":"автомобиль","tags":"","index":"3", 
       },{
-      "english":"arm","transcription":"[ ɑ:m ]","russian":"рука","tags":"", "index":"4"
+      "english":"arm","transcription":"[ ɑ:m ]","russian":"рука","tags":"", "index":"4", 
   },{
       "english":"air","transcription":"[  eər ]","russian":"воздух","tags":"", "index":"5"
   },{
@@ -37,7 +37,14 @@ import Card from './Card';
 ]
 function Slider({choosenCard = 0}) {
     const [index, setIndex] = useState(choosenCard);
-    
+    const [learned, setLearned] = useState([]);
+
+    const handleClickCheck = (index) => {
+      const newLearned = learned.includes(index) 
+      ? learned.filter((i) => i !== index)
+      : [...learned, index];
+    setLearned(newLearned);
+    }
 
     /*const handleClick =(direction)=> {
       let newIndex = index;
@@ -79,9 +86,9 @@ function Slider({choosenCard = 0}) {
 
     return (
     <div className="container">
-        <Card  english={words[index].english} russian={words[index].russian}  transcription={words[index].transcription} /> 
-        <button className="card-container__backward" /*onClick={()=>handleClick('left')}*/onClick={ handleClickLeft}><i className="fa-solid fa-angle-left"></i></button>
-        <button className="card-container__forward" /*onClick={()=>handleClick('right')}*/onClick={ handleClickRight}><i className="fa-solid fa-angle-right"></i></button>
+        <Card handleClickLeft={handleClickLeft} handleClickRight={handleClickRight} handleClickCheck={handleClickCheck} english={words[index].english} russian={words[index].russian}  transcription={words[index].transcription} /> 
+        
+        <div className="container__learned">{`Всего выучено новых слов: ${learned.length}/${words.length}`}</div>
     </div>
         
     );

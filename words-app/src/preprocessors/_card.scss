@@ -22,8 +22,6 @@
         height: 30px;
         width: 170px;
         background-color: rgb(80, 174, 80);
-    
-
     }
     
 }
@@ -46,6 +44,10 @@
 .container {
     padding: 50px ;
     background-color: $main-background-color;
+    &__learned {
+    margin-top: 10px ;
+    }
 }
+
     
     

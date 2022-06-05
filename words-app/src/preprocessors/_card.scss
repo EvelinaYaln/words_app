@@ -22,6 +22,9 @@
         height: 30px;
         width: 170px;
         background-color: rgb(80, 174, 80);
+        &:focus {
+            outline: 4px solid yellow;
+        }
     }
     
 }

@@ -19,6 +19,10 @@ a {
   color: #FFF;
 }
 
+button {
+  display: inline-block;
+}
+
 .button-container {
   display: inline-block;
   margin-left: 10px;
@@ -113,6 +117,10 @@ a {
   background-color: #50ae50;
 }
 
+.card__button-show:focus {
+  outline: 4px solid yellow;
+}
+
 .card-container__forward, .card-container__backward {
   border: 0px solid #F3F7EA;
   background-color: #F3F7EA;
@@ -133,6 +141,10 @@ a {
 .container {
   padding: 50px;
   background-color: #F3F7EA;
+}
+
+.container__learned {
+  margin-top: 10px;
 }
 
 .footer {
@@ -158,20 +170,18 @@ a {
 }
 
 .table {
-  margin-left: 20px;
+  margin-left: 80px;
   text-align: left;
+  display: inline-block;
 }
 
 .heading-container {
+  display: inline-block;
   padding-top: 50px;
 }
 
-.heading-container__heading {
-  margin-left: 20px;
-}
-
 td, th {
-  width: 165px;
+  width: 155px;
   text-align: left;
 }
 

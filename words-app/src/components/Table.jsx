@@ -81,4 +81,5 @@ export default Table;
             <i className="fa-solid fa-trash-can"></i>
            </button>      
           </div>
-    </div>*/
+    </div>
+     В таблице добавить кнопки в ячейку <td> , чтобы было все ровное*/

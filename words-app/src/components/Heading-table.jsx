@@ -1,12 +1,13 @@
 function Heading() {
     return (
-      <div className="heading-container">
-        <table className="heading-container__heading">
+      <div className="Heading">
+        <table className="table">
           <tbody>
             <tr>
               <th>Word</th>
               <th>Translation</th>
               <th>Transcription</th>
+              <th></th>
             </tr>
           </tbody>
         </table>

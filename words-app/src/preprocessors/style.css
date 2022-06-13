@@ -175,8 +175,7 @@ button {
   display: inline-block;
 }
 
-.heading-container {
-  display: inline-block;
+.Heading {
   padding-top: 50px;
 }
 
@@ -187,6 +186,23 @@ td, th {
 
 input {
   height: 30px;
+  width: 140px;
+  margin-left: 15px;
+}
+
+.red {
+  border: red solid 1px;
+  outline: red solid 1px;
+}
+
+.error {
+  font-size: .6rem;
+  color: red;
+  margin-right: 3px;
+}
+
+.inline-block {
+  display: inline-block;
 }
 
 .logo {

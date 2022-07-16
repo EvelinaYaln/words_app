@@ -1,17 +1,20 @@
-import React, {useEffect, useState} from 'react';
-
+import React, {useEffect, useState, useContext} from 'react';
+import { WordsContext } from "../context/context-words";
 function Table(props) {
-    
+    const {editWords, words, deleteWords} = useContext(WordsContext);
     const [english, setEnglish] = useState(props.english);
     const [russian, setRussian] = useState(props.russian);
     const [transcription, setTranscription] = useState(props.transcription);
+
     const [emptyEnglish, setEmptyEnglish] =  useState('');
     const [emptyRussian, setEmptyRussian] =  useState('');
     const [emptyTranscrption, setEmptyTranscription] =  useState('');
+
     const [edit, setEdit] = useState(false);
    
     const [valid, setValid] = useState(false);
  
+   
     useEffect(()=> {
       if (emptyEnglish || emptyRussian || emptyTranscrption) {
         setValid(false)
@@ -27,21 +30,18 @@ function Table(props) {
     const handleSave = () => {
       setEdit(!edit);
       save();
-    }
-
-    
-    const handleEnglish = (e) => {
-      setEnglish(e.target.value);
-        if (e.target.value.trim() === '') {
-          setEmptyEnglish('Поле не может быть пустым')
-        } else {
-        setEmptyEnglish('');
-      }
+      editWords();
     }
 
     const save = () => {
       console.log(english,russian,transcription);
     }
+
+    const handleDelete = () => {
+      deleteWords();
+      
+    }
+
     /*const handleEnglishErr = (e) => {
       setEnglish(e.target.value);
       console.log(e.target.value)
@@ -52,6 +52,14 @@ function Table(props) {
              setErrEnglish('');
     }*/
 
+    const handleEnglish = (e) => {
+      setEnglish(e.target.value);
+        if (e.target.value.trim() === '') {
+          setEmptyEnglish('Поле не может быть пустым')
+        } else {
+        setEmptyEnglish('');
+      }
+    }
     const handleRussian = (e) => {
       setRussian(e.target.value);
       if (e.target.value.trim() === '') {
@@ -104,6 +112,7 @@ function Table(props) {
           {emptyTranscrption && <div className='error'>{emptyTranscrption}</div>} 
           <input className={emptyTranscrption ? "red" : ""} data-name={"transcription"} name="transcription" type="text" value={transcription} onChange={handleTranscription}  />
           <div className="button-container">
+          
         </div> 
           {edit ? 
             <>
@@ -116,7 +125,7 @@ function Table(props) {
               <button  className="button-container__correct" id="correct" type="button" onClick={handleEdit}>
                 <i className="fa-solid fa-pen"></i>
               </button> }
-              <button className="button-container__delete" type="button">
+              <button className="button-container__delete" type="button" onClick={handleDelete}>
                 <i className="fa-solid fa-trash-can"></i>
               </button>      
         </div>
@@ -143,7 +152,7 @@ function Table(props) {
                       <button  className="button-container__correct" id="correct" type="button" onClick={handleEdit}>
                         <i className="fa-solid fa-pen"></i>
                       </button> }
-                      <button className="button-container__delete" type="button">
+                      <button className="button-container__delete" type="button" onClick={handleDelete}>
                         <i className="fa-solid fa-trash-can"></i>
                       </button>      
                 </div>

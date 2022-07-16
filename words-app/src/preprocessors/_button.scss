@@ -4,7 +4,7 @@ button {
 .button-container {
     display: inline-block;
     margin-left: 10px;
-    &__save {
+    &__save, &__add {
         color: $text-color;
         background-color: rgb(80, 174, 80);
         width: 75px;
@@ -17,6 +17,9 @@ button {
             background-color:rgba(80, 174, 80,.9);
         }
     } 
+    &__add {
+        margin-left: 10px;
+    }
     &__correct {
         color: $text-color;
         background-color: rgb(236, 142, 65);
@@ -50,6 +53,7 @@ button {
         width: 75px;
         height: 25px;
     }
+    
 }
 
 

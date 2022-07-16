@@ -5,15 +5,18 @@ import Main from './components/Main';
 import {Routes, Route} from 'react-router-dom'
 import Slider from './components/Slider';
 import NotFound from './components/NotFound';
+import { WordsContextProvider } from './context/context-words';
 function App() {
   return (
     <div className="App">
       <Header/>
-      <Routes>
-        <Route path="/game" element={<Slider choosenCard={3}/>}/>
-        <Route path="/" element={<Main/>}/>
-        <Route path="*" element={<NotFound/>}/>
-      </Routes>
+      <WordsContextProvider>
+        <Routes>
+          <Route path="/game" element={<Slider choosenCard={3}/>}/>
+          <Route path="/" element={<Main/>}/>
+          <Route path="*" element={<NotFound/>}/>
+        </Routes>
+      </WordsContextProvider>
       <Footer/>
     </div>
   );

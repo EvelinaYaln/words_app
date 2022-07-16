@@ -28,7 +28,7 @@ button {
   margin-left: 10px;
 }
 
-.button-container__save {
+.button-container__save, .button-container__add {
   color: #FFF;
   background-color: #50ae50;
   width: 75px;
@@ -40,8 +40,12 @@ button {
   margin-right: 5px;
 }
 
-.button-container__save:hover {
+.button-container__save:hover, .button-container__add:hover {
   background-color: rgba(80, 174, 80, 0.9);
+}
+
+.button-container__add {
+  margin-left: 10px;
 }
 
 .button-container__correct {
@@ -188,6 +192,10 @@ input {
   height: 30px;
   width: 140px;
   margin-left: 15px;
+}
+
+.add {
+  margin-top: 40px;
 }
 
 .red {

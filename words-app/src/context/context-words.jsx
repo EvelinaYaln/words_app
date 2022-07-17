@@ -24,7 +24,7 @@ function WordsContextProvider (props) {
       };
 
       const editWords = (word) => {
-        fetch(`itgirlschool/api/words/${word.id}/update`, {
+        fetch(` http://itgirlschool.justmakeit.ru/api/words/${word.id}/update`, {
           method: 'POST', 
           body: JSON.stringify(word), 
         })
@@ -44,17 +44,18 @@ function WordsContextProvider (props) {
           })
           .catch((errors) => setError(errors));
       };
-
-      const addWords = () => {
+    
+      const addWords = (word) => {
         fetch(` http://itgirlschool.justmakeit.ru/api/words/add`, {
             method: 'POST',
-            body: JSON.stringify(),
+            body: JSON.stringify(word),
           })
             .then(() => {
               getWords();
             })
             .catch((errors) => setError(errors));
       };
+
 
     return (
         <WordsContext.Provider value={{words, loading, editWords, error, deleteWords, addWords}}>

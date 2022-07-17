@@ -213,6 +213,10 @@ input {
   display: inline-block;
 }
 
+.loading {
+  margin: 100px 0;
+}
+
 .logo {
   color: #000;
   font-size: 2rem;

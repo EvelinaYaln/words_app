@@ -1,7 +1,7 @@
 import React, {useEffect, useState, useContext} from 'react';
 import { WordsContext } from "../context/context-words";
 function Table(props) {
-    const {editWords, words, deleteWords} = useContext(WordsContext);
+    const {editWords, deleteWords} = useContext(WordsContext);
     const [english, setEnglish] = useState(props.english);
     const [russian, setRussian] = useState(props.russian);
     const [transcription, setTranscription] = useState(props.transcription);
@@ -26,11 +26,18 @@ function Table(props) {
     const handleEdit = () => {
       setEdit(!edit);
     }
+ 
+    const word = {
+      english: english,
+      russian: russian,
+      transcription: transcription,
+      id: props.word.id,
+    }
 
     const handleSave = () => {
       setEdit(!edit);
       save();
-      editWords();
+      editWords(word);
     }
 
     const save = () => {
@@ -38,7 +45,7 @@ function Table(props) {
     }
 
     const handleDelete = () => {
-      deleteWords();
+      deleteWords(props.word);
       
     }
 

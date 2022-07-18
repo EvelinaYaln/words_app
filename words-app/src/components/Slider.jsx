@@ -54,7 +54,7 @@ function Slider({choosenCard = 0}) {
 
     return (
     <div className="container">
-        <Card  index={index} handleClickLeft={handleClickLeft} handleClickRight={handleClickRight} handleClickCheck={handleClickCheck} english={words.english} russian={words.russian}  transcription={words.transcription} /> 
+        <Card  index={index} handleClickLeft={handleClickLeft} handleClickRight={handleClickRight} handleClickCheck={handleClickCheck} english={words[index].english} russian={words[index].russian}  transcription={words[index].transcription} /> 
         <div className="container__learned">{`Всего выучено новых слов: ${learned.length}/${words.length}`}</div>
     </div>
         

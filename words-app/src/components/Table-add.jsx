@@ -34,9 +34,9 @@ function TableAdd() {
     return (
       <div className="table-container">
          <form className="form-add">
-            <input type="text" className="add" onChange={handleEnglish}/>
-            <input type="text" className="add" onChange={handleRussian}/>
-            <input type="text" className="add" onChange={handleTranscription}/>
+            <input type="text" className="add" onChange={handleEnglish} placeholder="english"/>
+            <input type="text" className="add" onChange={handleRussian} placeholder="russian"/>
+            <input type="text" className="add" onChange={handleTranscription} placeholder="translation"/>
             <button className="button-container__add" type="button" onClick={handleAdd}>
                 <i className="fa-solid fa-plus"></i>Add 
             </button>

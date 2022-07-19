@@ -37,15 +37,18 @@ button {
   border-radius: 3px;
   -webkit-transition: all .2s;
   transition: all .2s;
-  margin-right: 5px;
 }
 
 .button-container__save:hover, .button-container__add:hover {
   background-color: rgba(80, 174, 80, 0.9);
 }
 
+.button-container__save {
+  margin-right: 5px;
+}
+
 .button-container__add {
-  margin-left: 10px;
+  margin-left: 30px;
 }
 
 .button-container__correct {
@@ -188,14 +191,17 @@ td, th {
   text-align: left;
 }
 
-input {
-  height: 30px;
-  width: 140px;
+.words {
   margin-left: 15px;
 }
 
 .add {
-  margin-top: 40px;
+  margin: 40px 15px 0 0;
+}
+
+.words, .add {
+  height: 30px;
+  width: 140px;
 }
 
 .red {

@@ -32,6 +32,7 @@ function Table(props) {
       russian: russian,
       transcription: transcription,
       id: props.word.id,
+      tags: [],
     }
 
     const handleSave = () => {
@@ -109,15 +110,15 @@ function Table(props) {
       <form className="table">
         <div className='inline-block'>
           {emptyEnglish && <div className='error'>{emptyEnglish}</div>}
-          <input className={emptyEnglish ? "red" : ""} data-name={"english"} name="english-word" type="text" value={english} onChange={handleEnglish} />
+          <input  className={emptyEnglish ? "red" : "words"} data-name={"english"} name="english-word" type="text" value={english} onChange={handleEnglish} />
         </div>
         <div className='inline-block'>
           {emptyRussian && <div className='error'>{emptyRussian}</div>}
-          <input className={emptyRussian ? "red" : ""} data-name={"russian"} name="russian-word" type="text" value={russian} onChange={handleRussian} />
+          <input className={emptyRussian ? "red" : "words"} data-name={"russian"} name="russian-word" type="text" value={russian} onChange={handleRussian} />
         </div>
         <div className='inline-block'>
           {emptyTranscrption && <div className='error'>{emptyTranscrption}</div>} 
-          <input className={emptyTranscrption ? "red" : ""} data-name={"transcription"} name="transcription" type="text" value={transcription} onChange={handleTranscription}  />
+          <input className={emptyTranscrption ? "red" : "words"} data-name={"transcription"} name="transcription" type="text" value={transcription} onChange={handleTranscription}  />
           <div className="button-container">
           
         </div> 

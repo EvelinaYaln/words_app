@@ -11,7 +11,7 @@ function TableAdd() {
         russian: russian,
         transcription: transcription,
         tags: "город",
-        tags_json: "[\"u0433u043eu0440u043eu04344\"]",
+        tags_json: [],
       }
 
     const handleAdd = (e) => {
@@ -33,7 +33,7 @@ function TableAdd() {
 
     return (
       <div className="table-container">
-         <form className="table">
+         <form className="form-add">
             <input type="text" className="add" onChange={handleEnglish}/>
             <input type="text" className="add" onChange={handleRussian}/>
             <input type="text" className="add" onChange={handleTranscription}/>

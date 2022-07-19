@@ -14,14 +14,19 @@ td,th {
     
 }
 
-input {
-    height: 30px;
-    width: 140px;
+.words {
     margin-left: 15px;
 }
 
 .add {
-    margin-top: 40px;
+    margin: 40px 15px 0 0;
+}
+
+
+
+.words, .add {
+    height: 30px;
+    width: 140px;
 }
 
 .red {
@@ -41,4 +46,5 @@ input {
 
 .loading {
     margin: 100px 0;
+    //background-color: $main-background-color;
 }

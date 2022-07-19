@@ -52,6 +52,10 @@ function Slider({choosenCard = 0}) {
       setIndex(newIndex);
     }
 
+    if (!words.length) {
+      return
+    }
+
     return (
     <div className="container">
         <Card  index={index} handleClickLeft={handleClickLeft} handleClickRight={handleClickRight} handleClickCheck={handleClickCheck} english={words[index].english} russian={words[index].russian}  transcription={words[index].transcription} /> 

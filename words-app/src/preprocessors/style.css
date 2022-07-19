@@ -197,6 +197,7 @@ td, th {
 
 .add {
   margin: 40px 15px 0 0;
+  padding-left: 5px;
 }
 
 .words, .add {

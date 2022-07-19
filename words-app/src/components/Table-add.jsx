@@ -36,7 +36,7 @@ function TableAdd() {
          <form className="form-add">
             <input type="text" className="add" onChange={handleEnglish} placeholder="english"/>
             <input type="text" className="add" onChange={handleRussian} placeholder="russian"/>
-            <input type="text" className="add" onChange={handleTranscription} placeholder="translation"/>
+            <input type="text" className="add" onChange={handleTranscription} placeholder="transcription"/>
             <button className="button-container__add" type="button" onClick={handleAdd}>
                 <i className="fa-solid fa-plus"></i>Add 
             </button>
